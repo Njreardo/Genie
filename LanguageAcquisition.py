@@ -31,12 +31,13 @@ def FunTime():
 				except:
 					pass
 				try:
-					print emerge[local-1]
-					location.append(emerge[local-1])
-					try:
-						location.append(npoi[1])
-					except:
-						pass
+					if type(emerge[local-1]) is str:
+						print emerge[local-1]
+						location.append(emerge[local-1])
+						try:
+							location.append(npoi[1])
+						except:
+							pass
 					location.append(m+1)
 				except:
 					pass
